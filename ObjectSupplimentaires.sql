@@ -1,7 +1,7 @@
 
 -- Objectifs supplementaire
 
--- TRANSACTION
+-- TRANSACTION: 
 START TRANSACTION;
 SELECT * FROM etudiants;
 INSERT INTO etudiants ( nom, prenom, email, mdp, telephone, adresse, ville, codePostale, id_session)
@@ -16,4 +16,4 @@ SELECT * FROM etudiants;
 
 -- VIEW
 CREATE VIEW getAllStudent AS SELECT * FROM etudiants;
-SELECT nom FROM getAllStudent
+SELECT nom FROM getAllStudent;
